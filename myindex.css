@@ -1,0 +1,463 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    margin-top: -16px;
+    /* scroll-behavior: smooth; */
+}
+header{
+    margin-top: 0px;
+    background-image: linear-gradient(rgb(188, 185, 223,0.1),rgb(100,180,190,0.1)), url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+    height: 70vh;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    /* position:fixed; */
+}
+
+
+.navbar {
+    /* margin: 2% 14% 95% 14%; */
+    padding-top: 2%;
+    text-align: center;
+}
+.navbar li a:hover{
+        font-size: 20px;
+        color: rgb(129, 87, 87);
+        letter-spacing: 1px;
+        transition: color 1s;
+        /* scroll-behavior: smooth; */
+}
+.navbar li,.navbar a{
+    display: inline-block;
+    /* scroll-behavior: smooth; */
+    color: #f9f2f2;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* text-align:left; */
+    /* margin: 2% 2% 90% 2%; */
+
+}
+#name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    margin-top: 5%;
+    /* margin-top: 30%;
+    margin-left: 20%;
+    margin-bottom: 40%; */
+}
+.social-icons{
+    align-content: center;
+    margin-left: 35%;
+    margin-top: 0 px;
+    /* margin: 6% 20% 50% 20%; */
+}
+.social-icons li a img{
+    height: 15px;
+    width: 15px;
+}
+.social-icons li a img:hover{
+    height: 20px;
+    width: 20px;
+}
+.social-icons li{
+    margin-left: 5%;
+    display: inline-block;
+    /* align-content: center;
+    margin-left: 2%;
+    margin-right: 2%; */
+}
+.blackincolor{
+    color: white;
+}
+
+/* main section */
+main{
+    position: relative;
+    margin-top: 0%; 
+    /* background-color: rgb(40, 100, 140); */
+    /* background-color: rgb(100,180,190,0.2); */
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color:rgb(100,180,190,0.1);
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+#profilepic{
+    border: whitesmoke 3px solid;
+    /* margin-top: 2%; */
+    /* margin-left: 42%  ; */
+    border-radius: 50%;
+    height:200px;
+    width: 200px;   
+    margin-top: -110px; 
+}
+#about{
+     /* padding-top: 34vh; */
+    color: black;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 500;
+    /* padding-bottom: 10px; */
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+#mypara{
+ 
+margin-left: 23%;
+margin-right: 19%;
+}
+
+/* skills section */
+/* #skills{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+} */
+.section-headings{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color:rgb(40,87,164);
+    font-family: inherit;
+    /* align-items: center; */
+}
+
+
+#skillsetcontainer{
+    /* height: 200px; */
+    display:flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.skills-bg-color{
+    /* margin-bottom: 100px; */
+    margin:20px;
+    background-color: lightgray;
+    /* margin-bottom: 20px; */
+    border-radius: 40px ;
+    width: 100px;
+    /* margin-left:30px ; */
+}
+.skills-perc{
+    /* margin-left: 20px; */
+    border-top-left-radius: 40px ;
+    border-bottom-left-radius: 40px ;
+    height: inherit;
+    /* to go in id skilss-perc-1 */
+    background-color: blue;
+    width: 70%;
+    /*  */
+}
+.skills-text{
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+}
+/* Projects Section */
+#projects-container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-around;
+    flex-direction:row;
+    position: relative;
+}
+
+.txt-over-projects{
+    position: absolute;
+    max-width: 250px;
+    font-weight: 600;
+}
+#txt-over-project1{
+    top: 12%;
+    left:15%; 
+}
+#txt-over-project2{
+    top: 12%;
+    right:10%; 
+}
+#txt-over-project3{
+    top: 45%;
+    left:15%; 
+}
+#txt-over-project4{
+    top: 45%;
+    right:10%; 
+}
+#txt-over-project5{
+    top: 78%;
+    left:15%; 
+}
+#txt-over-project6{
+    top: 78%;
+    right:10%;  
+}
+.project-img{
+    width: 400px;
+    position: relative;
+}
+.project-img:hover{
+    opacity: 0.3;  
+}
+
+
+/*  */
+/* /* Projects Section 
+#projects-container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-around;
+    flex-direction:row;
+    position: relative;
+}
+ */
+/* contact section */
+#contact-section{
+background-image: linear-gradient(to left bottom,rgb(26, 42, 71),rgb(93, 91, 172));
+}
+#contact-section-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 80%;
+    justify-content: space-around;
+    
+}
+#contact-us-form{
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+#contact-us-form div input{
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-bottom: white solid 5px;
+    margin-bottom: 70px;
+    width: 500px;
+    background-color:inherit ;
+    font-size: 30px;
+}
+#contact-us-form div button{
+    background-color: inherit;
+    border: solid 5px white;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: medium;
+    color: gray;    
+}
+#our-details{
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.subheadings{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#contact-section>div{
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Education section */
+#education{
+    width: 100%;
+    position: relative;
+}
+#education-heading{
+    margin-bottom: 5%;
+}
+#container-1::after{
+    position: absolute;
+    content: '';
+    background-color: gray;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-top: -8%;
+    margin-left: 407px;
+    z-index: 1;
+}
+#container-2::after{
+    position: absolute;
+    content: '';
+    background-color: gray;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-top: -10%;
+    margin-left: -132px;
+    z-index: 1;
+}
+#container-3::after{
+    position: absolute;
+    content: '';
+    background-color: gray;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-top: -10%;
+    margin-left: 407px;
+    z-index: 1;
+}
+#container-1,#container-2,#container-3{
+    /* position: absolute; */
+    width: 20%;
+    height:50%;
+    margin-left: -29%;
+    margin-top: 0%;
+}
+#container-2{
+    margin-right: -64%;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow-wrap:wrap ; */
+    /* width: 200px; */
+}
+.icon-img img{
+    height: 50px;
+    width: 50px;
+}
+.degree-name{
+    font-weight: 900;
+    font-size: 30px;
+    color:rgb(40,87,164) ;
+}
+.insttute-name{
+    font-weight: 700;
+    font-size: 20px;
+    color: orangered;
+}
+.duration{
+    font-weight: 700;
+    font-size: 20px;
+    color: orangered;
+}
+#divider{
+    position: absolute;
+    margin-top: 15%;
+    height: 50%;
+    width: 0px;
+    border-right: dashed 5px rgb(155,214,253);
+}
+#airplane{
+    position: sticky;
+    top: 17%;
+    transform: rotate(90deg); /*translateX(-40px); */
+    margin-left: 2px;
+    z-index: 2;
+  
+    /* margin-top: 10%; */
+}
+
+/* Experience section */
+#divider-2{
+    position: absolute;
+    margin-top: 10%;
+    height: 11%;
+    width: 0px;
+    border-right: dashed 5px rgb(155,214,253);
+}
+#car{
+    position: sticky;
+    top: 17%;
+    transform: rotate(90deg); 
+    margin-left: 4px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+/* different skilset  */
+
+#skills-perc1{
+    background-color: blue;
+    width: 80%;
+}
+
+#skills-perc2{
+    background-color: red;
+    width: 80%;
+}
+#skills-perc3{
+    background-color: violet;
+    width: 65%;
+}
+#skills-perc4{
+    background-color: red;
+    width: 90%;
+}
+#skills-perc5{
+    background-color: lightgreen;
+    width: 70%;
+}
+#skills-perc6{
+    background-color: khaki;
+    width: 85%;
+}
+#skills-perc8{
+    background-color: sandybrown;
+    width: 55%;
+}
+#skills-perc9{
+    background-color: orange;
+    width: 47%;
+}
+#skills-perc10{
+    background-color: teal;
+    width: 80%;
+}
+/*  */
