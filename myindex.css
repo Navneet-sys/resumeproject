@@ -128,13 +128,7 @@ margin-left: 23%;
 margin-right: 19%;
 }
 
-/* skills section */
-/* #skills{
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between;
-} */
+
 .section-headings{
     margin-top: 30px;
     font-size: 40px;
@@ -178,112 +172,61 @@ margin-right: 19%;
     color: white;
 }
 /* Projects Section */
+/* #projects{
+    height: 50vh;
+} */
 #projects-container{
-    display:flex;
-    flex-wrap: wrap;
-    width: 60%;
-    justify-content: space-around;
-    flex-direction:row;
-    position: relative;
-}
-
-.txt-over-projects{
-    position: absolute;
-    max-width: 250px;
-    font-weight: 600;
-}
-#txt-over-project1{
-    top: 12%;
-    left:15%; 
-}
-#txt-over-project2{
-    top: 12%;
-    right:10%; 
-}
-#txt-over-project3{
-    top: 45%;
-    left:15%; 
-}
-#txt-over-project4{
-    top: 45%;
-    right:10%; 
-}
-#txt-over-project5{
-    top: 78%;
-    left:15%; 
-}
-#txt-over-project6{
-    top: 78%;
-    right:10%;  
-}
-.project-img{
-    width: 400px;
-    position: relative;
-}
-.project-img:hover{
-    opacity: 0.3;  
-}
-
-
-/*  */
-/* /* Projects Section 
-#projects-container{
-    display:flex;
-    flex-wrap: wrap;
-    width: 60%;
-    justify-content: space-around;
-    flex-direction:row;
-    position: relative;
-}
- */
-/* contact section */
-#contact-section{
-background-image: linear-gradient(to left bottom,rgb(26, 42, 71),rgb(93, 91, 172));
-}
-#contact-section-container{
     display: flex;
-    /* flex-wrap: wrap; */
-    width: 80%;
     justify-content: space-around;
-    
+    flex-wrap: wrap;
+    /* position:relative; */
+    width: 80%;
+    /* border: 2px black solid; */
+    margin-top: 2%;
 }
-#contact-us-form{
-    margin-right: 10%;
-    margin-left: 10%;
+.project{
+    position: relative;
+    margin-top: 2%; 
+    width: 400px;
+    height: 400px;
+    background-size: contain;
 
 }
-#contact-us-form div input{
-    border-top: none;
-    border-left: none;
-    border-right: none; 
-    border-bottom: white solid 5px;
-    margin-bottom: 70px;
-    width: 500px;
-    background-color:inherit ;
-    font-size: 30px;
+.project img{
+ width: 100%;
+ height: 100%;   
 }
-#contact-us-form div button{
-    background-color: inherit;
-    border: solid 5px white;
-    width: 180px;
-    height: 50px;
-    border-radius: 5px;
-    font-size: medium;
-    color: gray;    
-}
-#our-details{
-    font-size: 30px;
-    margin-bottom: 100px;
-}
-.subheadings{
+.project-details{
+    position:absolute;
+    transition: all 1s ease-in-out;
+    top: 30%;
+    left:20%; 
     font-weight: 700;
-    font-size: 40px;
+    font-size: 20px;
+    color: transparent;  
+    overflow: hidden; 
+}
+.project:hover .project-details{
+    color: #2857A4;
+   
+}
+.project:hover {
+    box-shadow: 1px 1px 30px #74ADC8;
+    border-radius: 10px;
+}
+.project:hover img{
+    opacity: 0.3;
 }
 
-#contact-section>div{
-    margin-bottom: 40px;
-    color: white;
-}
+
+
+
+
+
+
+
+
+
 
 /* Education section */
 #education{
@@ -399,6 +342,59 @@ background-image: linear-gradient(to left bottom,rgb(26, 42, 71),rgb(93, 91, 172
 
 
 
+/* contact section */
+#contact-section{
+    background-image: linear-gradient(to left bottom,rgb(26, 42, 71),rgb(93, 91, 172));
+    }
+#contact-section-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    flex-direction:row ;
+    /* align-items: center; */
+    
+}
+#contact-us-form{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 500px;
+    margin-bottom: 50px;
+
+}
+#contact-us-form div input{
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-bottom: white solid 5px;
+    margin-bottom: 70px;
+    width: 500px;
+    background-color:inherit ;
+    font-size: 30px;
+}
+#contact-us-form div button{
+    background-color: inherit;
+    border: solid 5px white;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: medium;
+    color: gray;    
+}
+#our-details{
+    width: 500px;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+.subheadings{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#contact-section>div{
+    margin-bottom: 40px;
+    color: white;
+}
 
 
 
@@ -460,4 +456,79 @@ background-image: linear-gradient(to left bottom,rgb(26, 42, 71),rgb(93, 91, 172
     background-color: teal;
     width: 80%;
 }
+/*  */
+
+/*  project section trash */
+/* #projects-container{
+    display:flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-around;
+    flex-direction:row;
+    /* position: relative; 
+}
+#project-1{
+    width: 500px;
+    height: 500px;
+    border: olive 2px solid;
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png");
+}
+.txt-over-projects{
+    visibility: hidden;
+}
+#project-1:hover .txt-over-projects{
+    visibility: visible;
+} */
+/* #project-1{
+    position: relative;
+    border: 2x solid black;
+}
+
+#project-1-txt{
+    top: 0px;
+    position: relative;
+    display: none;
+}
+#project-1:hover #project-1-txt{
+    display: block;
+} 
+.txt-over-projects{
+    position: absolute;
+    max-width: 250px;
+    font-weight: 600;
+}
+/* #txt-over-project1{
+    top: 12%;
+    left:15%; 
+} 
+#txt-over-project2{
+    top: 12%;
+    right:10%; 
+}
+#txt-over-project3{
+    top: 45%;
+    left:15%; 
+}
+#txt-over-project4{
+    top: 45%;
+    right:10%; 
+}
+#txt-over-project5{
+    top: 78%;
+    left:15%; 
+}
+#txt-over-project6{
+    top: 78%;
+    right:10%;  
+    position: relative;
+    width: 400px; 
+}
+.project-img{
+    width: 400px;
+    position: relative; 
+}
+.project-img:hover{
+    opacity: 0.2;  
+}
+*/
 /*  */
